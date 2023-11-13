@@ -1,0 +1,12 @@
+C:\Users\Admin\Desktop\KLTN\Server\KLTN\BO\bin\Debug\net7.0\BO.deps.json
+C:\Users\Admin\Desktop\KLTN\Server\KLTN\BO\bin\Debug\net7.0\BO.dll
+C:\Users\Admin\Desktop\KLTN\Server\KLTN\BO\bin\Debug\net7.0\BO.pdb
+C:\Users\Admin\Desktop\KLTN\Server\KLTN\BO\obj\Debug\net7.0\BO.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\KLTN\Server\KLTN\BO\obj\Debug\net7.0\BO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\KLTN\Server\KLTN\BO\obj\Debug\net7.0\BO.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\KLTN\Server\KLTN\BO\obj\Debug\net7.0\BO.AssemblyInfo.cs
+C:\Users\Admin\Desktop\KLTN\Server\KLTN\BO\obj\Debug\net7.0\BO.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\KLTN\Server\KLTN\BO\obj\Debug\net7.0\BO.dll
+C:\Users\Admin\Desktop\KLTN\Server\KLTN\BO\obj\Debug\net7.0\refint\BO.dll
+C:\Users\Admin\Desktop\KLTN\Server\KLTN\BO\obj\Debug\net7.0\BO.pdb
+C:\Users\Admin\Desktop\KLTN\Server\KLTN\BO\obj\Debug\net7.0\ref\BO.dll
