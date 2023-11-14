@@ -25,5 +25,10 @@ namespace BL
                 return false;
             }
         }
+
+        public bool AddUser(Employee employee)
+        {
+            return _dlAuth.AddUser(employee);
+        }
     }
 }

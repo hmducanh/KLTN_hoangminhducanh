@@ -8,6 +8,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Security.Principal;
 using System.Text;
+using XAct.Messages;
 
 namespace KLTN.Controllers
 {
@@ -27,6 +28,7 @@ namespace KLTN.Controllers
         {
             ServiceResult serviceResult = new ServiceResult();
             bool check = _bLAuth.CheckAccountExist(employee);
+
             if (check)
             {
                 return Ok(new ServiceResult
@@ -40,6 +42,40 @@ namespace KLTN.Controllers
                 return Ok(new ServiceResult
                 {
                     Success = false
+                });
+            }
+        }
+
+        [HttpPost("signup")]
+        public ActionResult SignUp([FromBody] Employee employee)
+        {
+            ServiceResult serviceResult = new ServiceResult();
+            bool check = _bLAuth.CheckAccountExist(employee);
+            if (!check)
+            {
+                bool addUser = _bLAuth.AddUser(employee);
+                if (addUser)
+                {
+                    return Ok(new ServiceResult
+                    {
+                        Success = true
+                    });
+                }
+                else
+                {
+                    return Ok(new ServiceResult
+                    {
+                        Success = false,
+                        Message = "Có lỗi xảy ra khi thêm vào db"
+                    });
+                }
+            }
+            else
+            {
+                return Ok(new ServiceResult
+                {
+                    Success = false,
+                    Message = "Tài khoản đã tồn tại"
                 });
             }
         }
