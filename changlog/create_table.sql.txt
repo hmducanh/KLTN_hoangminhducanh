@@ -1,0 +1,40 @@
+CREATE TABLE `world`.`employee` (
+  `ID` INT NOT NULL,
+  `Username` VARCHAR(45) NULL,
+  `Password` VARCHAR(45) NULL,
+  `Role` INT NULL,
+  `Fullname` VARCHAR(225) NULL,
+  `Avatar` VARCHAR(45) NULL,
+  `Age` INT NULL,
+  PRIMARY KEY (`ID`))
+ENGINE = InnoDB;
+
+
+CREATE TABLE `world`.`educational_facility` (
+  `ID` INT NOT NULL,
+  `Name` VARCHAR(225) NULL,
+  PRIMARY KEY (`ID`));
+
+CREATE TABLE `world`.`criterion` (
+  `ID` INT NOT NULL,
+  `Description` TEXT NULL COMMENT 'Mô tả tiêu chí',
+  PRIMARY KEY (`ID`));
+
+CREATE TABLE `world`.`criterion_mapping` (
+  `ID` INT NOT NULL,
+  `CriterionStatisticID` INT NULL,
+  `SortOrder` INT NULL,
+  `CustomCriterionID1` INT NULL,
+  `CustomCriterionID2` INT NULL,
+  `CustomCriterionID3` INT NULL,
+  `CustomCriterionID4` INT NULL,
+  `CustomCriterionID5` INT NULL,
+  `CustomCriterionID6` INT NULL,
+  `CustomCriterionID7` INT NULL,
+  `CustomCriterionID8` INT NULL,
+  `CustomCriterionID9` INT NULL,
+  `CustomCriterionID10` INT NULL,
+  `CustomCriterionID11` INT NULL,
+  `CustomCriterionID12` INT NULL,
+  `CustomCriterionID13` INT NULL,
+  PRIMARY KEY (`ID`));
